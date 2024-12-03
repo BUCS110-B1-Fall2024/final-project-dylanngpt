@@ -1,11 +1,11 @@
 ---
 
-# Falling Objects Game  
-## CS110 B1 Final Project - Fall 2024  
+Falling Objects Game  
+CS110 B1 Final Project - Fall 2024  
 
-## Team Members  
+Team Members  
 
-**Dylan Guthrie**  
+Dylan Guthrie  
 
 ---
 
