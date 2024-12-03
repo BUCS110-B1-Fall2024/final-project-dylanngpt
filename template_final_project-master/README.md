@@ -1,65 +1,71 @@
+---
 
-:warning: Everything between << >> needs to be replaced (remove << >> after replacing)
+# Falling Objects Game  
+## CS110 B1 Final Project - Fall 2024  
 
-# << Productivity App >>
-## CS110 B1 Final Project  << Fall 2024 >>
+## Team Members  
 
-## Team Members
+**Dylan Guthrie**  
 
- Dylan Guthrie 
+---
 
-***
+## Project Description  
 
-## Project Description
+Our project is a **Falling Objects Game**, an interactive and fast-paced game where players control a character using arrow keys to dodge objects falling from the sky. The goal is to avoid collisions while earning points based on survival time. The game includes escalating difficulty as objects fall faster over time, adding to the challenge. Key features include:
 
- Project Description
-Our project is a Productivity App designed to help users enhance focus and manage stress. The app combines a focus timer, task checklist, goal tracking, and stress-relief features to create a streamlined tool for organization and mental well-being. Key features include:
+- **Dynamic gameplay**: Objects increase speed and variety over time.  
+- **Interactive controls**: Smooth movement with arrow keys for precise dodging.  
+- **Score tracking**: Points are awarded based on survival duration, with a high-score feature.  
+- **Power-ups**: Optional shields or speed boosts for extra excitement.  
+- **Unique design**: Vibrant visuals and engaging sound effects enhance the gaming experience.  
 
-A Focus Timer with customizable durations for productivity.
-A Daily Checklist to organize tasks and track completion.
-Goal Tracking, including both mini and big goals, for progress monitoring.
-A Breathing Timer with sound guidance to promote relaxation and reduce stress.
-This app aims to provide an intuitive, user-friendly interface with efficient functionality to support better mental health and productivity.
+This game is designed to provide an engaging and competitive experience for players of all skill levels.  
 
- 
+---
 
-***    
+## GUI Design  
 
-## GUI Design
+### Initial Design  
 
-### Initial Design
+![initial gui](https://ibb.co/Smqj6pk)  
 
-![initial gui]((https://ibb.co/Smqj6pk)
-### Final Design
+### Final Design  
 
-![final gui](assets/finalgui.jpg)
+![final gui](assets/finalgui.jpg)  
 
-## Program Design
+---
 
-### Features
+## Program Design  
 
-1. Focus Timer with customizable intervals.
-2. Daily Checklist with task addition/removal.
-3 . Mini Goals and Big Goals tracking.
- 4.Breathing Timer with guided audio cues.
-5. Progress-saving functionality to retain user data across sessions.
+### Features  
 
-### Classes
+1. **Player Movement**: Arrow key controls for smooth navigation.  
+2. **Falling Objects**: Randomized objects with varying speeds and sizes.  
+3. **Score System**: Tracks survival time and displays high scores.  
+4. **Difficulty Progression**: Gradual increase in object speed and frequency.  
+5. **Power-Ups**: Optional items for added excitement, such as shields or temporary speed boosts.  
+6. **Data Persistence**: Saves high scores to a file for future sessions.  
 
-Timer: Handles focus timer and breathing timer functionality.
-Checklist: Manages daily tasks, including adding, removing, and marking tasks as complete.
-Goals: Tracks mini and big goals with the ability to update progress.
-GUIManager: Controls the graphical user interface and user interaction.
-DataHandler: Manages data saving and loading for task and goal persistence.
+### Classes  
 
-ATP
+- **Player**: Manages the character's position, movement, and collision detection.  
+- **FallingObject**: Represents objects falling from the sky, with attributes like speed and type.  
+- **Game**: Oversees the game logic, including difficulty scaling and score tracking.  
+- **GUIManager**: Handles rendering of the game screen and updates based on user interaction.  
+- **DataHandler**: Manages saving and loading of high scores from a file.  
 
+---
 
-Step	                      Procedure	        Expected Results
-1	Launch the app	          Main window       opens with all elements visible
-2	Set a focus timer	          Timer           starts countdown correctly
-3	Add a daily task	          Task             appears in the checklist
-4	Mark a task complete	      Task              marked as done with visual update
-5	Add a goal	                Goal             is displayed in the goals section
-6	Use the breathing timer	    Timer             counts correctly with sound cues
-7	Close and reopen the app	  Data           is saved and restored correctly
+## Acceptance Test Plan (ATP)  
+
+| **Step**                     | **Procedure**                           | **Expected Results**                                |  
+|-------------------------------|-----------------------------------------|---------------------------------------------------|  
+| 1. Launch the game            | Run the program                        | Main window opens with character and objects visible |  
+| 2. Move the character         | Use arrow keys to move left/right       | Character responds smoothly to inputs             |  
+| 3. Objects fall               | Start the game                         | Objects fall from the top of the screen           |  
+| 4. Avoid collision            | Move character to avoid objects         | No collision; game continues                      |  
+| 5. Collision detection        | Let the character collide with an object | Collision ends game and shows the final score     |  
+| 6. Score updates              | Survive as long as possible            | Score increases based on survival time            |  
+| 7. High score saving          | Close and reopen the game              | High score is retained and displayed              |  
+
+---
