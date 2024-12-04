@@ -54,18 +54,19 @@ This game is designed to provide an engaging and competitive experience for play
 - **GUIManager**: Handles rendering of the game screen and updates based on user interaction.  
 - **DataHandler**: Manages saving and loading of high scores from a file.  
 
----
 
-## Acceptance Test Plan (ATP)  
 
-| **Step**                     | **Procedure**                           | **Expected Results**                                |  
-|-------------------------------|-----------------------------------------|---------------------------------------------------|  
-| 1. Launch the game            | Run the program                        | Main window opens with character and objects visible |  
-| 2. Move the character         | Use arrow keys to move left/right       | Character responds smoothly to inputs             |  
-| 3. Objects fall               | Start the game                         | Objects fall from the top of the screen           |  
-| 4. Avoid collision            | Move character to avoid objects         | No collision; game continues                      |  
-| 5. Collision detection        | Let the character collide with an object | Collision ends game and shows the final score     |  
-| 6. Score updates              | Survive as long as possible            | Score increases based on survival time            |  
-| 7. High score saving          | Close and reopen the game              | High score is retained and displayed              |  
+## **Acceptance Test Plan (ATP)**  
 
----
+| **Step**                     | **Procedure**                            | **Expected Results**                                 |  
+|-------------------------------|------------------------------------------|----------------------------------------------------|  
+| **1. Launch the game**        | Run the program.                        | The game window opens, showing the player, falling objects, and initial score of `0`. |  
+| **2. Move the player**        | Press the left or right arrow keys.      | The player moves smoothly left or right in response to the inputs. |  
+| **3. Objects fall**           | Observe the falling objects.            | Objects fall from the top of the screen at a consistent speed. |  
+| **4. Avoid falling objects**  | Move the player to avoid falling objects. | The player avoids collisions, and the game continues running without interruptions. |  
+| **5. Collision detection**    | Let a falling object touch the player.   | The game stops, displays "Game Over," and shows the final score on the screen. |  
+| **6. Restart the game**       | After a collision, press the **R** key. | The game restarts, resetting the player position, falling objects, and score to `0`. |  
+| **7. Score updates**          | Avoid falling objects for an extended time. | The score increases over time as long as the player avoids collisions. |  
+| **8. High score saving**      | Close and reopen the game after playing. | The highest score from the previous session is retained and displayed on the main screen. |  
+
+
