@@ -11,7 +11,7 @@ Dylan Guthrie
 
 ## Project Description  
 
-Our project is a **Falling Objects Game**, an interactive and fast-paced game where players control a character using arrow keys to dodge objects falling from the sky. The goal is to avoid collisions while earning points based on survival time. The game includes escalating difficulty as objects fall faster over time, adding to the challenge. Key features include:
+My project is a **Falling Objects Game**, an interactive and fast-paced game where players control a character using arrow keys to dodge objects falling from the sky. The goal is to avoid collisions while earning points based on survival time. The game includes escalating difficulty as objects fall faster over time, adding to the challenge. Key features include:
 
 - **Dynamic gameplay**: Objects increase speed and variety over time.  
 - **Interactive controls**: Smooth movement with arrow keys for precise dodging.  
@@ -27,7 +27,7 @@ This game is designed to provide an engaging and competitive experience for play
 
 ### Initial Design  
 
-![initial gui](https://ibb.co/Smqj6pk)  
+![initial gui]([https://ibb.co/Smqj6pk](https://ibb.co/bJ1JN2N))  
 
 ### Final Design  
 
