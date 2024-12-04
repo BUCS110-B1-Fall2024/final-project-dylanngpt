@@ -55,7 +55,7 @@ This game is designed to provide an engaging and competitive experience for play
 - **DataHandler**: Manages saving and loading of high scores from a file.  
 
 
-
+Milestone 3:
 ## **Acceptance Test Plan (ATP)**  
 
 | **Step**                     | **Procedure**                            | **Expected Results**                                 |  
@@ -70,3 +70,83 @@ This game is designed to provide an engaging and competitive experience for play
 | **8. High score saving**      | Close and reopen the game after playing. | The highest score from the previous session is retained and displayed on the main screen. |  
 
 
+
+Milestone 2 :
+
+class Player:
+    def __init__(self, x, y, img_file):
+        """
+        Initializes the player object.
+
+        Args:
+            x (int): Initial x-coordinate of the player.
+            y (int): Initial y-coordinate of the player.
+            img_file (str): Path to the player's image file.
+        """
+        self.x = x
+        self.y = y
+        self.img_file = img_file
+
+    def move_left(self):
+        """
+        Moves the player left by a set amount.
+        """
+        self.x -= 5  # Adjust movement speed as needed
+
+    def move_right(self):
+        """
+        Moves the player right by a set amount.
+        """
+        self.x += 5
+
+    def get_position(self):
+        """
+        Returns the player's current position.
+
+        Returns:
+            tuple: (x, y) coordinates of the player.
+        """
+        return self.x, self.y
+
+
+class FallingObject:
+    def __init__(self, x, y, img_file, speed):
+        """
+        Initializes a falling object.
+
+        Args:
+            x (int): Initial x-coordinate of the object.
+            y (int): Initial y-coordinate of the object.
+            img_file (str): Path to the object's image file.
+            speed (int): Speed at which the object falls.
+        """
+        self.x = x
+        self.y = y
+        self.img_file = img_file
+        self.speed = speed
+
+    def fall(self):
+        """
+        Updates the y-coordinate of the object to simulate falling.
+        """
+        self.y += self.speed
+
+    def reset_position(self, new_x, new_y):
+        """
+        Resets the object's position to simulate spawning a new object.
+
+        Args:
+            new_x (int): New x-coordinate.
+            new_y (int): New y-coordinate.
+        """
+        self.x = new_x
+        self.y = new_y
+
+    def get_position(self):
+        """
+        Returns the object's current position.
+
+        Returns:
+            tuple: (x, y) coordinates of the object.
+        """
+        return self.x, self.y
