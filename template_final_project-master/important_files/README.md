@@ -16,8 +16,7 @@ My project is a **Falling Objects Game**, an interactive and fast-paced game whe
 - **Dynamic gameplay**: Objects increase speed and variety over time.  
 - **Interactive controls**: Smooth movement with arrow keys for precise dodging.  
 - **Score tracking**: Points are awarded based on survival duration, with a high-score feature.  
-- **Power-ups**: Optional shields or speed boosts for extra excitement.  
-- **Unique design**: Vibrant visuals and engaging sound effects enhance the gaming experience.  
+- **Power-ups**: Optional shields or speed boosts for extra excitement.    
 
 This game is designed to provide an engaging and competitive experience for players of all skill levels.  
 
@@ -31,7 +30,7 @@ This game is designed to provide an engaging and competitive experience for play
 
 ### Final Design  
 
-![final gui](assets/finalgui.jpg)  
+![final gui]([assets/finalgui.jpg](https://ibb.co/5kQkLgc))  
 
 ---
 
@@ -40,7 +39,7 @@ This game is designed to provide an engaging and competitive experience for play
 ### Features  
 
 1. **Player Movement**: Arrow key controls for smooth navigation.  
-2. **Falling Objects**: Randomized objects with varying speeds and sizes.  
+2. **Falling Objects**: Monsters with varying speeds and sizes.  
 3. **Score System**: Tracks survival time and displays high scores.  
 4. **Difficulty Progression**: Gradual increase in object speed and frequency.  
 5. **Power-Ups**: Optional items for added excitement, such as shields or temporary speed boosts.  
@@ -49,10 +48,10 @@ This game is designed to provide an engaging and competitive experience for play
 ### Classes  
 
 - **Player**: Manages the character's position, movement, and collision detection.  
-- **FallingObject**: Represents objects falling from the sky, with attributes like speed and type.  
-- **Game**: Oversees the game logic, including difficulty scaling and score tracking.  
-- **GUIManager**: Handles rendering of the game screen and updates based on user interaction.  
-- **DataHandler**: Manages saving and loading of high scores from a file.  
+- **Falling_Object**: Represents objects falling from the sky, with attributes like speed and type.  
+- **Model**: Oversees the game logic, including difficulty scaling and score tracking.  
+- **view**: Handles rendering of the game screen and updates based on user interaction.  
+- **HighScoreManager**: Manages saving and loading of high scores from a file.  
 
 
 Milestone 3:
