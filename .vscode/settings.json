@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./template_final_project-master/src"
+    ]
+}
