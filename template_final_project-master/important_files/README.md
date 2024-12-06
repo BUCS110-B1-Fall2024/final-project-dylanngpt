@@ -56,18 +56,19 @@ This game is designed to provide an engaging and competitive experience for play
 
 
 Milestone 3:
+
+
 ## **Acceptance Test Plan (ATP)**  
 
 | **Step**                     | **Procedure**                            | **Expected Results**                                 |  
-|-------------------------------|------------------------------------------|----------------------------------------------------|  
-| **1. Launch the game**        | Run the program.                        | The game window opens, showing the player, falling objects, and initial score of `0`. |  
-| **2. Move the player**        | Press the left or right arrow keys.      | The player moves smoothly left or right in response to the inputs. |  
+|------------------------------|------------------------------------------|----------------------------------------------------|  
+| **1. Launch the game**        | Run the program.                        | The game window opens, showing the player and an initial score of `0`. |  
+| **2. Move the player**        | Press the left or right arrow keys.      | The player moves smoothly left or right based on input. |  
 | **3. Objects fall**           | Observe the falling objects.            | Objects fall from the top of the screen at a consistent speed. |  
-| **4. Avoid falling objects**  | Move the player to avoid falling objects. | The player avoids collisions, and the game continues running without interruptions. |  
-| **5. Collision detection**    | Let a falling object touch the player.   | The game stops, displays "Game Over," and shows the final score on the screen. |  
-| **6. Restart the game**       | After a collision, press the **R** key. | The game restarts, resetting the player position, falling objects, and score to `0`. |  
-| **7. Score updates**          | Avoid falling objects for an extended time. | The score increases over time as long as the player avoids collisions. |  
-| **8. High score saving**      | Close and reopen the game after playing. | The highest score from the previous session is retained and displayed on the main screen. |  
+| **4. Collision detection**    | Let a falling object touch the player.   | The game stops, displays "Game Over," and shows the final score on the screen. |  
+| **5. Restart the game**       | Press the **R** key after a collision. | The game resets, resetting the player position, falling objects, and scoring to `0`. |
+
+
 
 
 
